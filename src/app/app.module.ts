@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { Section1Component } from './section1/section1.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     Section1Component,
     ProjectComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
